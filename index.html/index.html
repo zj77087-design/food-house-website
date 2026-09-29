@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Food House</title>
+ <title>Food House | Fresh & Delicious Food</title>
 <style>
+ #home img {
+    margin-bottom: 25px;
+}
+
+#home button {
+    margin-top: 5px;
+}
     body {
         font-family: Arial, sans-serif;
         text-align: center;
@@ -182,7 +189,7 @@ footer p {
 .card a {
     text-decoration: none;
 }
- #why-us {
+#why-us {
     background-color: white;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
@@ -194,7 +201,570 @@ footer p {
 
 #why-us .card h3 {
     margin-top: 0;
-}   
+}
+#home button {
+    margin: 5px;
+}
+#home button {
+    transition: transform 0.2s;
+}
+
+#home button:hover {
+    transform: scale(1.05);
+}
+
+#home a:nth-of-type(2) button {
+    background-color: #222;
+}
+
+#home a:nth-of-type(2) button:hover {
+    background-color: orange;
+}
+html {
+    scroll-behavior: smooth;
+}
+#home img {
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 20px auto;
+}
+#home img {
+    transition: transform 0.3s;
+}
+
+#home img:hover {
+    transform: scale(1.03);
+}
+#home h1 {
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+#menu {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+#menu .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#menu .card h3 {
+    margin-bottom: 10px;
+}
+
+#menu .card p {
+    margin-bottom: 15px;
+}
+#menu h2 {
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+#menu .card {
+    border-radius: 18px;
+}
+#menu .card {
+    padding: 22px;
+    min-height: 360px;
+    box-sizing: border-box;
+}
+#about {
+    max-width: 900px;
+    margin: 15px auto;
+}
+#about p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+#about h2 {
+    margin-top: 10px;
+}
+#why-us .card {
+    border-radius: 18px;
+    padding: 22px;
+}
+#why-us .card h3 {
+    margin-bottom: 12px;
+}
+#contact h2 {
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    line-height: 1.8;
+}
+#contact {
+    max-width: 900px;
+    margin: 15px auto;
+}
+footer {
+    border-radius: 15px;
+}
+
+footer p {
+    line-height: 1.5;
+}
+nav {
+    position: sticky;
+    top: 10px;
+    z-index: 1000;
+}
+nav a {
+    transition: color 0.3s, transform 0.2s;
+    display: inline-block;
+}
+
+nav a:hover {
+    transform: translateY(-2px);
+}
+#home {
+    background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+}
+#home h1 {
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+}
+#home p:first-of-type {
+    font-weight: bold;
+}
+#home {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#menu .card img {
+    width: 120px;
+    max-width: 100%;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto 15px;
+}
+#menu .card p {
+    margin: 8px 0 15px;
+    letter-spacing: 2px;
+}
+#menu .card button {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#menu .card button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+#menu .card button {
+    min-width: 120px;
+    box-sizing: border-box;
+}
+
+#menu .card a {
+    display: inline-block;
+    margin-top: 5px;
+}
+#contact button {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#contact button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+#contact a {
+    display: inline-block;
+    margin-top: 10px;
+}
+.contact-info {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.contact-info p {
+    margin: 8px 0;
+}
+#contact .contact-info + a {
+    display: inline-block;
+    margin-top: 10px;
+}
+#contact button {
+    padding: 12px 28px;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#contact button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+#contact p {
+    margin: 10px 0;
+}
+
+#contact .contact-info {
+    margin-bottom: 20px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    letter-spacing: 0.5px;
+}
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+#backToTop:hover {
+    background: #cc5200;
+    transform: scale(1.1);
+}
+@media (max-width: 600px) {
+    #backToTop {
+        bottom: 15px;
+        right: 15px;
+        padding: 10px 13px;
+        font-size: 16px;
+    }
+}
+
+#orderBtn {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#orderBtn:hover {
+    background: #cc5200;
+    transform: scale(1.05);
+}
+#menu .card .popular-badge {
+    display: inline-block !important;
+    background: #222 !important;
+    color: white !important;
+    padding: 5px 12px !important;
+    border-radius: 15px !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    margin-bottom: 10px !important;
+}
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#menu .card {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu .card a {
+    margin-top: auto;
+}
+#menu .card .popular-badge {
+    height: 20px;
+    box-sizing: border-box;
+}
+#menu .card {
+    position: relative;
+}
+
+#menu .card .popular-badge {
+    position: absolute !important;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 !important;
+}
+.menu {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card > a:last-child {
+    margin-top: auto;
+}
+
+.card > a:last-child button {
+    width: 100%;
+    height: 45px;
+    box-sizing: border-box;
+}
+/* ===== Menu Card Polish ===== */
+
+#menu .card {
+    background: linear-gradient(to bottom, #ffffff, #fafafa);
+    border: 1px solid #eeeeee;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+#menu .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+#menu .card img {
+    transition: transform 0.3s ease;
+}
+
+#menu .card:hover img {
+    transform: scale(1.06);
+}
+
+#menu .card h3 {
+    font-size: 23px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#menu .card p {
+    color: #555;
+}
+
+#menu .card .price {
+    color: #222;
+    font-size: 21px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#menu .card button {
+    background: #ff6600;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100%;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#menu .card button:hover {
+    background: #e65c00;
+    transform: scale(1.03);
+}
+
+#menu .card .popular-badge {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+#home {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #eeeeee;
+}
+
+#home h1 {
+    font-size: 46px;
+    margin-bottom: 15px;
+}
+
+#home p {
+    max-width: 650px;
+    margin: 0 auto 20px;
+}
+
+#home img {
+    width: 260px;
+    margin: 25px auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+#home a button {
+    min-width: 140px;
+    margin: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#home a button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+    #home h1 {
+        font-size: 36px;
+    }
+
+    #home img {
+        width: 230px;
+    }
+
+    #home a button {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+#about {
+    border: 1px solid #eeeeee;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+}
+
+#about h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+    #about h2 {
+        font-size: 30px;
+    }
+
+    #about p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+}
+#why-us .card h3 {
+    min-height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+#why-us .card p {
+    min-height: 58px;
+    margin-top: 0;
+}
+#contact {
+    border: 1px solid #eeeeee;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+}
+
+#contact h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+#contact .contact-info {
+    border: 1px solid #eeeeee;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#contact .contact-info p {
+    font-size: 18px;
+}
+
+#contact button {
+    min-width: 150px;
+}
+
+@media (max-width: 600px) {
+    #contact h2 {
+        font-size: 30px;
+    }
+
+    #contact .contact-info p {
+        font-size: 17px;
+    }
+
+    #contact button {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+nav {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(5px);
+}
+
+nav a {
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: orange;
+}
+footer {
+    background: linear-gradient(to right, #222, #333);
+    color: white;
+    padding: 25px 20px;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.12);
+}
+
+footer p {
+    margin: 8px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+footer p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer a {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    footer {
+        padding: 20px 15px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+    footer p:first-child {
+        font-size: 17px;
+    }
+}
+footer {
+    padding: 12px 15px;
+}
+
+footer p {
+    margin: 6px 0;
+    line-height: 1.5;
+}
 </style>
 </head>
 
@@ -211,6 +781,11 @@ footer p {
     <h1>Welcome to Food House  🍔</h1>
     <p>Delicious food made with love.</p>
 <p>Fresh • Tasty • Delicious</p>
+<p>Enjoy delicious food made fresh for you.</p>
+<img src="images/food-house.jpg" alt="Delicious Food">
+<a href="#menu">
+    <button>View Menu</button>
+</a>
 <a href="#contact">
     <button>Order Now</button>
 </a>
@@ -223,27 +798,38 @@ footer p {
 <div class="menu">
 
     <div class="card">
+ <span class="popular-badge" style="display:inline-block; background:#222; color:white; padding:5px 12px; border-radius:15px; font-size:12px; font-weight:bold; margin-bottom:10px;">
+    POPULAR
+</span>
+ <img src="images/pizza.jpg" alt="Pizza">
         <h3>🍕 Pizza</h3>
+  <p>⭐⭐⭐⭐⭐</p>
         <p>Fresh and delicious pizza.</p>
-<p>Price: $10</p>
+<p class="price">Price: $10</p>
 <a href="#contact">
     <button>Order Pizza</button>
 </a>
     </div>
 
     <div class="card">
+ 
+  <img src="images/burger.jpg" alt="Burger">
         <h3>🍔 Burger</h3>
+ <p>⭐⭐⭐⭐⭐</p>
         <p>Juicy and tasty burger.</p>
-<p>Price: $7</p>
+<p class="price">Price: $7</p>
 <a href="#contact">
     <button>Order Burger</button>
 </a>
     </div>
 
     <div class="card">
+  
+  <img src="images/fries.jpg" alt="Fries">
         <h3>🍟 Fries</h3>
-        <p>Crispy golden fries.</p>
-<p>Price: $4</p>
+   <p>⭐⭐⭐⭐⭐</p>
+        <p>Crispy golden tasty fries.</p>
+<p class="price">Price: $4</p>
 <a href="#contact">
     <button>Order Fries</button>
 </a>
@@ -261,7 +847,7 @@ footer p {
     </p>
 
 </section>
-    <section id="why-us">
+<section id="why-us">
     <h2>Why Choose Us?</h2>
 
     <div class="menu">
@@ -285,14 +871,37 @@ footer p {
     <h2>Contact Us</h2>
 
     <p>
-    Email:
-    <a href="mailto:myrestaurant@example.com">
-        Email Us
-    </a>
-</p>
+        Email:
+        <a href="mailto:myrestaurant@example.com">
+            Email Us
+        </a>
+    </p>
+
+    <div class="contact-info">
+        <p>📞 Phone: 0300-1234567</p>
+        <p>📍 Location: Lahore, Pakistan</p>
+    </div>
+
+  <a href="mailto:myrestaurant@example.com">
+    <button id="orderBtn">Order Now</button>
+</a>
 </section>
 <footer>
     <p>© 2026 Food House. All Rights Reserved.</p>
+<a href="#home">
+    <button id="backToTop">Back to Top ↑</button>
+</a>
 </footer>
+<script>
+window.addEventListener("scroll", function() {
+    const backToTop = document.getElementById("backToTop");
+
+    if (window.scrollY > 300) {
+        backToTop.style.display = "block";
+    } else {
+        backToTop.style.display = "none";
+    }
+});
+</script>
 </body>
 </html>
