@@ -1,0 +1,2174 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Food House | Fresh & Delicious Food</title>
+<style>
+ #home img {
+    margin-bottom: 25px;
+}
+
+#home button {
+    margin-top: 5px;
+}
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        margin-top: 30px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 220px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+nav {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: orange;
+}
+button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 30px;
+    margin: 15px 0;
+    border-radius: 15px;
+}
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+footer {
+    background-color: #222;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}
+#menu h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+#menu .card h3 {
+    margin-top: 0;
+}
+#home {
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+#home p {
+    font-size: 20px;
+}
+#about {
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+#about p {
+    max-width: 700px;
+    margin: auto;
+}
+#contact {
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+#contact a {
+    color: orange;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+.card button {
+    margin-top: 10px;
+}
+
+.card a {
+    text-decoration: none;
+}
+#why-us {
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+#why-us h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+#why-us .card h3 {
+    margin-top: 0;
+}
+#home button {
+    margin: 5px;
+}
+#home button {
+    transition: transform 0.2s;
+}
+
+#home button:hover {
+    transform: scale(1.05);
+}
+
+#home a:nth-of-type(2) button {
+    background-color: #222;
+}
+
+#home a:nth-of-type(2) button:hover {
+    background-color: orange;
+}
+html {
+    scroll-behavior: smooth;
+}
+#home img {
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 20px auto;
+}
+#home img {
+    transition: transform 0.3s;
+}
+
+#home img:hover {
+    transform: scale(1.03);
+}
+#home h1 {
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+#menu {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+#menu .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#menu .card h3 {
+    margin-bottom: 10px;
+}
+
+#menu .card p {
+    margin-bottom: 15px;
+}
+#menu h2 {
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+#menu .card {
+    border-radius: 18px;
+}
+#menu .card {
+    padding: 22px;
+    min-height: 360px;
+    box-sizing: border-box;
+}
+#about {
+    max-width: 900px;
+    margin: 15px auto;
+}
+#about p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+#about h2 {
+    margin-top: 10px;
+}
+#why-us .card {
+    border-radius: 18px;
+    padding: 22px;
+}
+#why-us .card h3 {
+    margin-bottom: 12px;
+}
+#contact h2 {
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    line-height: 1.8;
+}
+#contact {
+    max-width: 900px;
+    margin: 15px auto;
+}
+footer {
+    border-radius: 15px;
+}
+
+footer p {
+    line-height: 1.5;
+}
+nav {
+    position: sticky;
+    top: 10px;
+    z-index: 1000;
+}
+nav a {
+    transition: color 0.3s, transform 0.2s;
+    display: inline-block;
+}
+
+nav a:hover {
+    transform: translateY(-2px);
+}
+#home {
+    background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+}
+#home h1 {
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+}
+#home p:first-of-type {
+    font-weight: bold;
+}
+#home {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#menu .card img {
+    width: 120px;
+    max-width: 100%;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto 15px;
+}
+#menu .card p {
+    margin: 8px 0 15px;
+    letter-spacing: 2px;
+}
+#menu .card button {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#menu .card button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+#menu .card button {
+    min-width: 120px;
+    box-sizing: border-box;
+}
+
+#menu .card a {
+    display: inline-block;
+    margin-top: 5px;
+}
+#contact button {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#contact button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+#contact a {
+    display: inline-block;
+    margin-top: 10px;
+}
+.contact-info {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.contact-info p {
+    margin: 8px 0;
+}
+#contact .contact-info + a {
+    display: inline-block;
+    margin-top: 10px;
+}
+#contact button {
+    padding: 12px 28px;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#contact button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+#contact p {
+    margin: 10px 0;
+}
+
+#contact .contact-info {
+    margin-bottom: 20px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    letter-spacing: 0.5px;
+}
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+#backToTop:hover {
+    background: #cc5200;
+    transform: scale(1.1);
+}
+@media (max-width: 600px) {
+    #backToTop {
+        bottom: 15px;
+        right: 15px;
+        padding: 10px 13px;
+        font-size: 16px;
+    }
+}
+
+#orderBtn {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#orderBtn:hover {
+    background: #cc5200;
+    transform: scale(1.05);
+}
+#menu .card .popular-badge {
+    display: inline-block !important;
+    background: #222 !important;
+    color: white !important;
+    padding: 5px 12px !important;
+    border-radius: 15px !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    margin-bottom: 10px !important;
+}
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#menu .card {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu .card a {
+    margin-top: auto;
+}
+#menu .card .popular-badge {
+    height: 20px;
+    box-sizing: border-box;
+}
+#menu .card {
+    position: relative;
+}
+
+#menu .card .popular-badge {
+    position: absolute !important;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    margin: 0 !important;
+}
+.menu {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card > a:last-child {
+    margin-top: auto;
+}
+
+.card > a:last-child button {
+    width: 100%;
+    height: 45px;
+    box-sizing: border-box;
+}
+/* ===== Menu Card Polish ===== */
+
+#menu .card {
+    background: linear-gradient(to bottom, #ffffff, #fafafa);
+    border: 1px solid #eeeeee;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+#menu .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+#menu .card img {
+    transition: transform 0.3s ease;
+}
+
+#menu .card:hover img {
+    transform: scale(1.06);
+}
+
+#menu .card h3 {
+    font-size: 23px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#menu .card p {
+    color: #555;
+}
+
+#menu .card .price {
+    color: #222;
+    font-size: 21px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#menu .card button {
+    background: #ff6600;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100%;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#menu .card button:hover {
+    background: #e65c00;
+    transform: scale(1.03);
+}
+
+#menu .card .popular-badge {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+#home {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #eeeeee;
+}
+
+#home h1 {
+    font-size: 46px;
+    margin-bottom: 15px;
+}
+
+#home p {
+    max-width: 650px;
+    margin: 0 auto 20px;
+}
+
+#home img {
+    width: 260px;
+    margin: 25px auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+#home a button {
+    min-width: 140px;
+    margin: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#home a button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+    #home h1 {
+        font-size: 36px;
+    }
+
+    #home img {
+        width: 230px;
+    }
+
+    #home a button {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+#about {
+    border: 1px solid #eeeeee;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+}
+
+#about h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+    #about h2 {
+        font-size: 30px;
+    }
+
+    #about p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+}
+#why-us .card h3 {
+    min-height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+#why-us .card p {
+    min-height: 58px;
+    margin-top: 0;
+}
+#contact {
+    border: 1px solid #eeeeee;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+}
+
+#contact h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+#contact .contact-info {
+    border: 1px solid #eeeeee;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#contact .contact-info p {
+    font-size: 18px;
+}
+
+#contact button {
+    min-width: 150px;
+}
+
+@media (max-width: 600px) {
+    #contact h2 {
+        font-size: 30px;
+    }
+
+    #contact .contact-info p {
+        font-size: 17px;
+    }
+
+    #contact button {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+nav {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(5px);
+}
+
+nav a {
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: orange;
+}
+footer {
+    background: linear-gradient(to right, #222, #333);
+    color: white;
+    padding: 25px 20px;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.12);
+}
+
+footer p {
+    margin: 8px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+footer p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer a {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    footer {
+        padding: 20px 15px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+    footer p:first-child {
+        font-size: 17px;
+    }
+}
+footer {
+    padding: 12px 15px;
+}
+
+footer p {
+    margin: 6px 0;
+    line-height: 1.5;
+}
+#cartBox {
+    background: #222;
+    color: white;
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#cartTotal {
+    color: #ff6600;
+}
+
+.cart-divider {
+    color: #777;
+    margin: 0 5px;
+}
+
+#cartCount {
+    color: orange;
+}
+#cartItems {
+    max-width: 500px;
+    margin: 0 auto 25px;
+}
+
+#cartItems p {
+    background: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+.cart-item {
+    background: white;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.quantity-controls button {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.quantity-controls button:hover {
+    transform: scale(1.08);
+}
+.quantity-controls span {
+    min-width: 25px;
+    font-weight: bold;
+    font-size: 17px;
+}
+#menu .card {
+    padding-top: 55px;
+}
+
+#menu .card img {
+    height: 90px;
+    object-fit: cover;
+}
+#clearCartBtn {
+    background: #222;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+#clearCartBtn:hover {
+    background: #ff6600;
+}
+#clearCartBtn {
+    background: #222;
+    color: white;
+    margin-bottom: 25px;
+    padding: 11px 22px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#clearCartBtn:hover {
+    background: #ff6600;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+#checkoutBtn:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+    opacity: 0.6;
+    transform: none;
+    box-shadow: none;
+}
+#clearCartBtn,
+#checkoutBtn {
+    margin-right: 8px;
+}
+
+@media (max-width: 600px) {
+    #clearCartBtn,
+    #checkoutBtn {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+#orderForm {
+    background: white;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+}
+#checkoutSummary {
+    background: #f7f7f7;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #ff6600;
+}
+
+#checkoutSummary h4 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #222;
+}
+
+#checkoutItems p {
+    margin: 7px 0;
+    font-size: 15px;
+}
+
+#checkoutSummary > p {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-bottom: 0;
+    font-size: 17px;
+}
+#checkoutSummary > p:last-child {
+    color: #ff6600;
+    font-size: 19px;
+    padding-top: 12px;
+    margin-top: 12px;
+}
+#orderForm h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#orderForm input,
+#orderForm textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+#orderForm textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#orderForm input:focus,
+#orderForm textarea:focus {
+    outline: none;
+    border-color: orange;
+}
+
+#orderForm button {
+    width: 100%;
+    background: #ff6600;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#orderForm button:hover {
+    background: #e65c00;
+}
+@media (max-width: 600px) {
+    #orderForm {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    #orderForm input,
+    #orderForm textarea {
+        font-size: 16px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .quantity-controls {
+        justify-content: center;
+    }
+}
+.remove-btn {
+    background: #222 !important;
+    color: white;
+    width: auto !important;
+    height: 35px !important;
+    padding: 0 12px !important;
+    font-size: 14px !important;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.remove-btn:hover {
+    background: #cc0000 !important;
+    transform: scale(1.05);
+}
+.empty-cart {
+    background: white;
+    padding: 18px;
+    margin: 10px auto;
+    border-radius: 12px;
+    color: #777;
+    font-weight: bold;
+    text-align: center;
+    max-width: 500px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+#checkoutBtn:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+    transform: none;
+}
+#orderForm {
+    background: white;
+    max-width: 500px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 15px;
+   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+}
+
+#orderForm h3 {
+    margin-top: 0;
+    margin-bottom: 22px;
+    text-align: center;
+    font-size: 24px;
+    color: #222;
+}
+
+#orderForm input,
+#orderForm textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+#orderForm textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#orderForm input:focus,
+#orderForm textarea:focus {
+    outline: none;
+    border-color: orange;
+}
+
+#orderForm button {
+    width: 100%;
+    background: #ff6600;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#orderForm button:hover {
+    background: #e65c00;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 600px) {
+    #orderForm {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    #orderForm input,
+    #orderForm textarea {
+        font-size: 16px;
+    }
+}
+#orderSuccess {
+    background: white;
+    max-width: 500px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    border-top: 5px solid #ff6600;
+}
+
+#orderSuccess h3 {
+    margin-top: 0;
+    color: #222;
+    font-size: 24px;
+}
+
+#orderSuccess p {
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+#orderSuccess #orderSummary {
+    font-weight: bold;
+}
+.cart-item {
+    background: white;
+    padding: 15px 18px;
+    margin: 10px auto;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 700px;
+    box-sizing: border-box;
+}
+
+.cart-item > span {
+    text-align: left;
+    line-height: 1.6;
+}
+
+.cart-item strong {
+    font-size: 15px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+#orderForm label {
+    display: block;
+    text-align: left;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+#orderNumber {
+    display: inline-block;
+    background: #222;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+#orderForm label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+#orderSuccess {
+    background: white;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 550px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+#orderSuccess h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+#orderSummary {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#orderDetails {
+    margin-top: 20px;
+    padding: 18px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    text-align: left;
+}
+
+#orderDetails h4 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+#orderNumber {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+#orderSuccess button {
+    margin-top: 20px;
+}
+#orderStatus {
+    max-width: 650px;
+    margin: 25px auto;
+    padding: 22px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.status-step {
+    text-align: center;
+    min-width: 100px;
+}
+
+.status-step span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #ddd;
+    color: #555;
+    font-weight: bold;
+}
+
+.status-step.active span {
+    background: #28a745;
+    color: white;
+}
+
+.status-step p {
+    margin: 8px 0 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.status-line {
+    width: 45px;
+    height: 3px;
+    background: #ddd;
+}
+
+.status-line.active {
+    background: #28a745;
+}
+
+@media (max-width: 600px) {
+    #orderStatus {
+        gap: 5px;
+    }
+
+    .status-step {
+        min-width: 85px;
+    }
+
+    .status-line {
+        width: 20px;
+    }
+}
+#statusMessage {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#orderHistorySection {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+#orderHistorySection h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#orderHistory {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.order-history-card {
+    padding: 18px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    border-left: 5px solid #28a745;
+}
+
+.order-history-card h3 {
+    margin-top: 0;
+}
+
+.order-history-card p {
+    margin: 7px 0;
+}
+#orderNumber {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: #f1f1f1;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#clearHistoryBtn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #dc3545;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#clearHistoryBtn:hover {
+    background: #b02a37;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    #clearHistoryBtn {
+        width: 100%;
+        padding: 12px;
+    }
+}
+#orderNumber {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 12px 20px;
+    background: white;
+    color: #222;
+    border: 2px solid #28a745;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+#orderNumber {
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    padding: 14px 24px;
+}
+#orderDetails {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    color: #222;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+#orderDetails h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #222;
+}
+
+#orderDetails p {
+    color: #333;
+    margin: 8px 0;
+}
+#orderHistorySection {
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+#orderHistorySection h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #222;
+    font-size: 26px;
+}
+
+#orderHistory {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.order-history-card {
+    padding: 20px;
+    background: #f8f8f8;
+    color: #222;
+    border-radius: 14px;
+    border-left: 5px solid #28a745;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.order-history-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #222;
+    font-size: 20px;
+}
+
+.order-history-card p {
+    margin: 8px 0;
+    color: #333;
+    line-height: 1.5;
+}
+
+.order-history-card strong {
+    color: #222;
+}
+#orderHistorySection {
+    background: #f2f2f2;
+    padding: 25px;
+    border-radius: 18px;
+    margin: 40px auto;
+    max-width: 750px;
+}
+
+.order-history-card {
+    background: #dcdcdc;
+    color: #222;
+    padding: 20px;
+    margin-bottom: 18px;
+    border-radius: 14px;
+    border: 1px solid #c5c5c5;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.order-history-card h3 {
+    color: #222;
+    margin-top: 0;
+}
+
+.order-history-card p {
+    color: #222;
+}
+
+#clearHistoryBtn {
+    background: #dc3545;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* ===== Premium Order History ===== */
+
+#orderHistorySection {
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 18px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+}
+
+#orderHistorySection h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #222;
+}
+
+#orderHistory {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.order-history-card {
+    background: linear-gradient(to bottom, #ffffff, #fafafa);
+    padding: 22px;
+    border-radius: 15px;
+    border: 1px solid #eeeeee;
+    border-left: 5px solid #ff6600;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.order-history-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 9px 20px rgba(0, 0, 0, 0.16);
+}
+
+.order-history-card h3 {
+    margin: 0 0 15px;
+    font-size: 21px;
+    color: #222;
+}
+
+.order-history-card p {
+    margin: 9px 0;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+}
+
+.order-history-card strong {
+    color: #222;
+}
+
+#clearHistoryBtn {
+    display: block;
+    margin: 25px auto 0;
+    padding: 12px 22px;
+    background: #222;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#clearHistoryBtn:hover {
+    background: #ff6600;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+    #orderHistorySection {
+        margin: 25px 10px;
+        padding: 20px 15px;
+    }
+
+    #orderHistorySection h2 {
+        font-size: 24px;
+    }
+
+    .order-history-card {
+        padding: 18px;
+    }
+
+    .order-history-card h3 {
+        font-size: 19px;
+    }
+
+    .order-history-card p {
+        font-size: 15px;
+    }
+
+    #clearHistoryBtn {
+        width: 100%;
+    }
+}
+.order-history-card p strong {
+    color: #222;
+}
+
+.order-history-card p:nth-of-type(2) {
+    display: inline-block;
+    background: #fff3e8;
+    color: #e65c00;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 5px 0 12px;
+}
+
+.order-history-card p:nth-of-type(2) strong {
+    color: #e65c00;
+}
+/* ===== Order History Info Layout ===== */
+
+.order-history-card p {
+    padding: 6px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.order-history-card p:last-child {
+    border-bottom: none;
+}
+
+.order-history-card p strong {
+    display: inline-block;
+    min-width: 120px;
+}
+</style>
+</head>
+
+<body>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#why-us">Why Us</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+   <section id="home">
+    <h1>Welcome to Food House  🍔</h1>
+    <p>Delicious food made with love.</p>
+<p>Fresh • Tasty • Delicious</p>
+<p>Enjoy delicious food made fresh for you.</p>
+<img src="images/food-house.jpg" alt="Delicious Food">
+<a href="#menu">
+    <button>View Menu</button>
+</a>
+<a href="#contact">
+    <button onclick="sendOrder()">Order Now</button>
+</a>
+</section>
+   <section id="menu">
+    <h2>Our Menu</h2>
+<div id="cartBox">
+    🛒 Cart: <span id="cartCount">0</span> items
+    <span class="cart-divider"> | </span>
+    Total: $<span id="cartTotal">0</span>
+</div>
+<div id="cartItems"></div>
+<button id="clearCartBtn" onclick="clearCart()">Clear Cart</button>
+<button id="checkoutBtn" onclick="checkout()">Checkout</button>
+
+<div id="orderForm" style="display:none;">
+    <h3>Complete Your Order</h3>
+ <div id="checkoutSummary">
+        <h4>Order Summary</h4>
+        <div id="checkoutItems"></div>
+        <p>Subtotal: $<span id="checkoutTotal">0</span></p>
+
+<p>Delivery Fee: $<span id="deliveryFee">2</span></p>
+
+<p><strong>Grand Total: $<span id="grandTotal">0</span></strong></p>
+    </div>
+
+  <label for="customerName">Full Name</label>
+<input type="text" id="customerName" placeholder="Your Name">
+
+   <label for="customerPhone">Phone Number</label>
+<input type="tel" id="customerPhone" placeholder="Phone Number">
+
+   <label for="customerAddress">Delivery Address</label>
+<textarea id="customerAddress" placeholder="Delivery Address"></textarea>
+
+    <button onclick="placeOrder()">Place Order</button>
+</div>
+<div id="orderSuccess" style="display:none;">
+    <h3>✅ Order Confirmed!</h3>
+    <p>Thank you for your order.</p>
+    <p id="orderSummary"></p>
+ <div id="orderDetails"></div>
+ <p id="orderNumber"></p>
+<div id="orderStatus">
+<p id="statusMessage">Your order has been received. ✅</p>
+    <div class="status-step active">
+        <span>1</span>
+        <p>Order Received</p>
+    </div>
+
+    <div class="status-line"></div>
+
+    <div class="status-step">
+        <span>2</span>
+        <p>Preparing</p>
+    </div>
+
+    <div class="status-line"></div>
+
+    <div class="status-step">
+        <span>3</span>
+        <p>Out for Delivery</p>
+    </div>
+</div>
+    <button onclick="backToMenu()">🍔 Back to Menu</button>
+</div>
+<section id="orderHistorySection">
+    <h2>📦 Order History</h2>
+
+    <div id="orderHistory"></div>
+
+    <button id="clearHistoryBtn" onclick="clearOrderHistory()">
+        🗑️ Clear Order History
+    </button>
+</section>
+    <!-- tumhare Pizza, Burger, Fries cards -->
+
+<div class="menu">
+
+    <div class="card">
+ <span class="popular-badge" style="display:inline-block; background:#222; color:white; padding:5px 12px; border-radius:15px; font-size:12px; font-weight:bold; margin-bottom:10px;">
+    POPULAR
+</span>
+ <img src="images/pizza.jpg" alt="Pizza">
+        <h3>🍕 Pizza</h3>
+  <p>⭐⭐⭐⭐⭐</p>
+        <p>Fresh and delicious pizza.</p>
+<p class="price">Price: $10</p>
+<button onclick="addToCart('Pizza', 10)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+ 
+  <img src="images/burger.jpg" alt="Burger">
+        <h3>🍔 Burger</h3>
+ <p>⭐⭐⭐⭐⭐</p>
+        <p>Juicy and tasty burger.</p>
+<p class="price">Price: $7</p>
+<button onclick="addToCart('Burger', 7)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+  
+  <img src="images/fries.jpg" alt="Fries">
+        <h3>🍟 Fries</h3>
+   <p>⭐⭐⭐⭐⭐</p>
+        <p>Crispy golden tasty fries.</p>
+<p class="price">Price: $4</p>
+<button onclick="addToCart('Fries', 4)">Add to Cart</button>
+    </div>
+
+</div>
+</section>
+   <section id="about">
+
+    <h2>About Us</h2>
+
+    <p>
+        Welcome to our restaurant. We serve fresh,
+        tasty and delicious food for everyone.
+    </p>
+
+</section>
+<section id="why-us">
+    <h2>Why Choose Us?</h2>
+
+    <div class="menu">
+        <div class="card">
+            <h3>🍕 Fresh Food</h3>
+            <p>We serve fresh and tasty food made with care.</p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Fast Service</h3>
+            <p>We try to prepare and serve your order quickly.</p>
+        </div>
+
+        <div class="card">
+            <h3>❤️ Made With Love</h3>
+            <p>Every meal is prepared with care and love.</p>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <p>
+   Email:
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=azramajeed1383@gmail.com" target="_blank">
+    Email Us
+</a>
+    </p>
+
+    <div class="contact-info">
+        <p>📞 Phone: 0300-1234567</p>
+        <p>📍 Location: Lahore, Pakistan</p>
+    </div>
+
+  <button id="orderBtn" onclick="checkout()">🍔 Order Now</button>
+</section>
+<footer>
+    <p>© 2026 Food House. All Rights Reserved.</p>
+<a href="#home">
+    <button id="backToTop">Back to Top ↑</button>
+</a>
+</footer>
+<script>
+let cartCount = 0;
+let cartTotal = 0;
+let cartItems = [];
+let orderNumber = "";
+let savedCart = localStorage.getItem("foodHouseCart");
+
+if (savedCart) {
+    cartItems = JSON.parse(savedCart);
+}
+cartCount = 0;
+cartTotal = 0;
+
+cartItems.forEach(function(product) {
+    cartCount += product.quantity;
+    cartTotal += product.price * product.quantity;
+});
+const deliveryFee = 2;
+
+
+function addToCart(item, price) {
+    cartCount++;
+    cartTotal += price;
+
+    let existingItem = cartItems.find(function(product) {
+        return product.name === item;
+    });
+
+    if (existingItem) {
+        existingItem.quantity++;
+    } else {
+        cartItems.push({
+            name: item,
+            price: price,
+            quantity: 1
+        });
+    }
+
+    updateCart();
+localStorage.setItem("foodHouseCart", JSON.stringify(cartItems));
+}
+
+function increaseQuantity(index) {
+    cartItems[index].quantity++;
+    cartCount++;
+    cartTotal += cartItems[index].price;
+
+    updateCart();
+    localStorage.setItem("foodHouseCart", JSON.stringify(cartItems));
+}
+
+function decreaseQuantity(index) {
+    if (cartItems[index].quantity > 1) {
+        cartItems[index].quantity--;
+        cartCount--;
+        cartTotal -= cartItems[index].price;
+    } else {
+        cartCount--;
+        cartTotal -= cartItems[index].price;
+        cartItems.splice(index, 1);
+    }
+
+    updateCart();
+    localStorage.setItem("foodHouseCart", JSON.stringify(cartItems));
+}
+function clearCart() {
+    cartItems = [];
+    cartCount = 0;
+    cartTotal = 0;
+
+    updateCart();
+    localStorage.setItem("foodHouseCart", JSON.stringify(cartItems));
+}
+function checkout() {
+    if (cartItems.length === 0) {
+        alert("Your cart is empty!");
+        return;
+    }
+
+    document.getElementById("orderSuccess").style.display = "none";
+
+    let checkoutItems = "";
+
+    cartItems.forEach(function(product) {
+        checkoutItems += `
+            <p>
+                ${product.name} × ${product.quantity}
+                — $${product.price * product.quantity}
+            </p>
+        `;
+    });
+
+    document.getElementById("checkoutItems").innerHTML = checkoutItems;
+    document.getElementById("checkoutTotal").textContent = cartTotal;
+
+
+orderNumber = "FH-" + Math.floor(1000 + Math.random() * 9000);
+
+let finalTotal = cartTotal + deliveryFee;
+
+document.getElementById("orderNumber").textContent =
+    "Order Number: " + orderNumber;
+
+document.getElementById("grandTotal").textContent = finalTotal;
+
+    orderForm.style.display = "block";
+
+    orderForm.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+}
+function placeOrder() {
+    let name = document.getElementById("customerName").value.trim();
+    let phone = document.getElementById("customerPhone").value.trim();
+    let address = document.getElementById("customerAddress").value.trim();
+
+    if (name === "" || phone === "" || address === "") {
+        alert("Please fill in all the details.");
+        return;
+    }
+
+    if (cartItems.length === 0) {
+        alert("Your cart is empty!");
+        return;
+    }
+
+
+
+  let finalTotal = cartTotal + deliveryFee;
+
+   console.log("cartTotal:", cartTotal);
+console.log("deliveryFee:", deliveryFee);
+console.log("finalTotal:", finalTotal);
+   
+    let items = "";
+
+    cartItems.forEach(function(product) {
+        items +=
+            product.name +
+            " x " +
+            product.quantity +
+            " = $" +
+            (product.price * product.quantity) +
+            "\n";
+    });
+
+
+
+
+   let templateParams = {
+    order_number: orderNumber,
+    customer_name: name,
+    customer_phone: phone,
+    customer_address: address,
+    order_items: items,
+    subtotal: cartTotal,
+    delivery_fee: deliveryFee,
+    grand_total: finalTotal
+};
+
+    emailjs.send(
+        "service_77m2drq",
+        "template_mfojexp",
+        templateParams
+    ).then(function(response) {
+
+        alert("Order sent successfully! ✅");
+
+let orderHistory = JSON.parse(localStorage.getItem("foodHouseOrders")) || [];
+
+let newOrder = {
+    orderNumber: orderNumber,
+    items: cartItems.map(function(product) {
+        return product.name + " x " + product.quantity;
+    }).join(", "),
+    subtotal: cartTotal,
+    deliveryFee: deliveryFee,
+    grandTotal: finalTotal,
+    date: new Date().toLocaleString(),
+    status: "Order Received"
+};
+
+orderHistory.push(newOrder);
+
+localStorage.setItem(
+    "foodHouseOrders",
+    JSON.stringify(orderHistory)
+);
+
+displayOrderHistory();
+
+        document.getElementById("orderSummary").textContent =
+            "Thank you, " + name + "! Your grand total is $" + finalTotal + ".";
+document.getElementById("orderDetails").innerHTML = `
+    <h4>Order Details</h4>
+    <p><strong>Items:</strong></p>
+    <p style="white-space: pre-line;">${items}</p>
+    <p><strong>Subtotal:</strong> $${cartTotal}</p>
+    <p><strong>Delivery Fee:</strong> $${deliveryFee}</p>
+    <p><strong>Grand Total:</strong> $${finalTotal}</p>
+`;
+
+        document.getElementById("orderForm").style.display = "none";
+        document.getElementById("orderSuccess").style.display = "block";
+   setTimeout(function() {
+    document.querySelectorAll(".status-step")[1].classList.add("active");
+ document.getElementById("statusMessage").textContent =
+    "Your food is being prepared. 👨‍🍳";
+    document.querySelectorAll(".status-line")[0].classList.add("active");
+}, 3000);
+
+setTimeout(function() {
+    document.querySelectorAll(".status-step")[2].classList.add("active");
+ document.getElementById("statusMessage").textContent =
+    "Your order is on the way! 🚗";
+    document.querySelectorAll(".status-line")[1].classList.add("active");
+}, 6000);
+        cartItems = [];
+        cartCount = 0;
+        cartTotal = 0;
+
+        localStorage.setItem("foodHouseCart", JSON.stringify(cartItems));
+
+        updateCart();
+
+        document.getElementById("customerName").value = "";
+        document.getElementById("customerPhone").value = "";
+        document.getElementById("customerAddress").value = "";
+
+        document.getElementById("orderSuccess").scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+
+    }).catch(function(error) {
+
+        console.log("EmailJS Error:", error);
+        alert("Order could not be sent. Please try again.");
+    });
+}
+function displayOrderHistory() {
+    let orderHistory = JSON.parse(localStorage.getItem("foodHouseOrders")) || [];
+
+    let historyContainer = document.getElementById("orderHistory");
+
+    if (orderHistory.length === 0) {
+        historyContainer.innerHTML = "<p>No previous orders yet.</p>";
+        return;
+    }
+
+    historyContainer.innerHTML = "";
+
+    orderHistory.forEach(function(order) {
+        historyContainer.innerHTML += `
+            <div class="order-history-card">
+                <h3>📦 ${order.orderNumber}</h3>
+                <p><strong>🕒 Date & Time:</strong> ${order.date}</p>
+                <p><strong>📌 Status:</strong> ${order.status}</p>
+                <p><strong>Items:</strong> ${order.items}</p>
+                <p><strong>Subtotal:</strong> $${order.subtotal}</p>
+                <p><strong>Delivery Fee:</strong> $${order.deliveryFee}</p>
+                <p><strong>Grand Total:</strong> $${order.grandTotal}</p>
+            </div>
+        `;
+    });
+}
+function clearOrderHistory() {
+    if (confirm("Are you sure you want to clear all order history?")) {
+        localStorage.removeItem("foodHouseOrders");
+
+        displayOrderHistory();
+    }
+}
+function backToMenu() {
+    document.getElementById("orderSuccess").style.display = "none";
+
+    document.getElementById("menu").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+}
+function removeItem(index) {
+    cartCount -= cartItems[index].quantity;
+    cartTotal -= cartItems[index].price * cartItems[index].quantity;
+
+    cartItems.splice(index, 1);
+
+    updateCart();
+    localStorage.setItem("foodHouseCart", JSON.stringify(cartItems));
+}
+function updateCart() {
+    let itemsHTML = "";
+
+    if (cartItems.length === 0) {
+        itemsHTML = "<p class='empty-cart' id='emptyCartMessage'>🛒 Your cart is empty.</p>";
+    } else {
+        cartItems.forEach(function(product, index) {
+            itemsHTML += `
+                <div class="cart-item">
+                 <span>
+    ${product.name} - $${product.price} each
+    <br>
+    <strong>Subtotal: $${product.price * product.quantity}</strong>
+</span>
+                    <div class="quantity-controls">
+                        <button onclick="decreaseQuantity(${index})">−</button>
+                        <span>${product.quantity}</span>
+                        <button onclick="increaseQuantity(${index})">+</button>
+                        <button class="remove-btn" onclick="removeItem(${index})">Remove</button>
+                    </div>
+                </div>
+            `;
+        });
+    }
+
+    document.getElementById("cartItems").innerHTML = itemsHTML;
+
+    if (cartItems.length === 0) {
+        setTimeout(function() {
+            let message = document.getElementById("emptyCartMessage");
+
+            if (message) {
+                message.style.display = "none";
+            }
+        }, 2000);
+    }
+
+    document.getElementById("cartCount").textContent = cartCount;
+    document.getElementById("cartTotal").textContent = cartTotal;
+
+    document.getElementById("checkoutBtn").disabled = cartItems.length === 0;
+
+    document.getElementById("checkoutBtn").style.opacity =
+        cartItems.length === 0 ? "0.6" : "1";
+}
+
+window.addEventListener("scroll", function() {
+    const backToTop = document.getElementById("backToTop");
+
+    if (window.scrollY > 300) {
+        backToTop.style.display = "block";
+    } else {
+        backToTop.style.display = "none";
+    }
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init({
+    publicKey: "JpktSgT3CtZ9rqY0X"
+});
+</script>
+<script>
+    displayOrderHistory();
+</script>
+</body>
+</html>
