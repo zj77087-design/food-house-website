@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Discover delicious food, gourmet burgers, refreshing drinks and a premium dining experience at Food House.">
+
+    <meta name="theme-color" content="#111111">
+
+    <title>Food House | A Taste of Luxury</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- =========================
+         1. ANNOUNCEMENT BAR
+    ========================== -->
+    <div class="announcement-bar">
+        <p>GOOD FOOD. GREAT MOMENTS. ALWAYS.</p>
+    </div>
+
+
+    <!-- =========================
+         2. WEBSITE HEADER
+    ========================== -->
+    <header class="site-header" id="top">
+
+        <div class="container header-container">
+
+            <a href="#home" class="logo" aria-label="Food House homepage">
+                <span class="logo-icon">F.</span>
+
+                <span class="logo-text">
+                    FOOD HOUSE
+                    <small>GOOD FOOD, GOOD MOOD</small>
+                </span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mainNavigation"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-navigation" id="mainNavigation">
+
+                <a href="#home" class="nav-link active">Home</a>
+
+                <a href="#menu" class="nav-link">Our Menu</a>
+
+                <a href="#about" class="nav-link">Our Story</a>
+
+                <a href="#reviews" class="nav-link">Reviews</a>
+
+                <a href="#contact" class="nav-link">Contact</a>
+
+                <button
+                    class="cart-button"
+                    id="openCart"
+                    type="button"
+                    aria-label="Open shopping cart"
+                >
+                    Cart
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             3. HERO SECTION
+        ========================== -->
+        <section class="hero-section" id="home">
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <p class="eyebrow">
+                        WELCOME TO FOOD HOUSE
+                    </p>
+
+                    <h1>
+                        Great Taste.
+                        <span>Beautifully Served.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Discover delicious flavours, freshly prepared
+                        favourites and memorable moments made around food.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="#menu" class="btn btn-primary">
+                            Explore Our Menu
+                        </a>
+
+                        <a href="#about" class="btn btn-secondary">
+                            Discover Our Story
+                        </a>
+
+                    </div>
+
+                    <div class="hero-highlights">
+
+                        <div class="highlight-item">
+                            <strong>Fresh</strong>
+                            <span>Made to order</span>
+                        </div>
+
+                        <div class="highlight-item">
+                            <strong>Flavour</strong>
+                            <span>Made with care</span>
+                        </div>
+
+                        <div class="highlight-item">
+                            <strong>Quality</strong>
+                            <span>In every bite</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+              <div class="hero-image-wrapper">
+
+    <img
+        class="hero-image"
+        src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=85"
+        alt="Fresh gourmet cheeseburger with melted cheese"
+        fetchpriority="high"
+    >
+
+    <div class="hero-image-label">
+        <span class="label-star">✦</span>
+        <span>MADE FOR FOOD LOVERS</span>
+    </div>
+
+</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             4. FEATURES STRIP
+        ========================== -->
+        <section class="features-section" aria-label="Our highlights">
+
+            <div class="container features-container">
+
+                <div class="feature-item">
+                    <span class="feature-icon">✦</span>
+                    <div>
+                        <h3>Fresh Ingredients</h3>
+                        <p>Quality in every bite</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <span class="feature-icon">♨</span>
+                    <div>
+                        <h3>Made Fresh</h3>
+                        <p>Prepared when you order</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <span class="feature-icon">♡</span>
+                    <div>
+                        <h3>Made with Care</h3>
+                        <p>Food worth sharing</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             5. FOOD MENU SECTION
+        ========================== -->
+        <section class="menu-section section-padding" id="menu">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">SOMETHING DELICIOUS</p>
+
+                    <h2>
+                        Explore Our
+                        <span>Menu</span>
+                    </h2>
+
+                    <p>
+                        From satisfying burgers to refreshing drinks,
+                        find something delicious for every craving.
+                    </p>
+
+                </div>
+
+
+                <!-- Menu Search -->
+                <div class="menu-toolbar">
+
+                    <div class="menu-search-wrapper">
+
+                        <label for="menuSearch" class="sr-only">
+                            Search food menu
+                        </label>
+
+                        <input
+                            type="search"
+                            id="menuSearch"
+                            class="menu-search"
+                            placeholder="Search your favourite food..."
+                            autocomplete="off"
+                        >
+
+                        <button
+                            type="button"
+                            id="clearSearch"
+                            class="clear-search"
+                            aria-label="Clear search"
+                        >
+                            ×
+                        </button>
+
+                    </div>
+
+                    <div class="menu-sort-wrapper">
+
+                        <label for="menuSort">Sort:</label>
+
+                        <select id="menuSort" class="menu-sort">
+                            <option value="featured">Featured</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="name">Name: A to Z</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Category Filters -->
+                <div class="menu-categories" id="menuCategories">
+
+                    <button
+                        type="button"
+                        class="category-button active"
+                        data-category="all"
+                        aria-pressed="true"
+                    >
+                        All Items
+                    </button>
+
+                    <button
+                        type="button"
+                        class="category-button"
+                        data-category="burgers"
+                        aria-pressed="false"
+                    >
+                        Burgers
+                    </button>
+
+                    <button
+                        type="button"
+                        class="category-button"
+                        data-category="pizza"
+                        aria-pressed="false"
+                    >
+                        Pizza
+                    </button>
+
+                    <button
+                        type="button"
+                        class="category-button"
+                        data-category="sides"
+                        aria-pressed="false"
+                    >
+                        Sides
+                    </button>
+
+                    <button
+                        type="button"
+                        class="category-button"
+                        data-category="drinks"
+                        aria-pressed="false"
+                    >
+                        Drinks
+                    </button>
+
+                    <button
+                        type="button"
+                        class="category-button"
+                        data-category="desserts"
+                        aria-pressed="false"
+                    >
+                        Desserts
+                    </button>
+
+                </div>
+
+
+                <!-- Product Cards: JavaScript will connect cart functions -->
+                <div class="menu-grid" id="menuGrid">
+
+                    <article
+                        class="food-card"
+                        data-id="burger-001"
+                        data-name="Double Stack Burger"
+                        data-price="1200"
+                        data-category="burgers"
+                    >
+
+                        <div class="food-image-wrapper">
+
+                           <img
+    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=85"
+    alt="Double Stack Burger"
+    loading="lazy"
+>
+
+                            <span class="food-badge">BESTSELLER</span>
+
+                        </div>
+
+                        <div class="food-card-content">
+
+                            <p class="food-category">BURGERS</p>
+
+                            <h3>Double Stack Burger</h3>
+
+                            <p class="food-description">
+                                Juicy layers, melted cheese and
+                                our signature burger flavours.
+                            </p>
+
+                            <div class="food-card-footer">
+
+                                <span class="food-price">
+                                    Rs. 1,200
+                                </span>
+
+                                <button
+                                    type="button"
+                                    class="add-to-cart"
+                                    data-add-to-cart="burger-001"
+                                >
+                                    + Add
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                  
+
+                    <article
+                        class="food-card"
+                        data-id="pizza-001"
+                        data-name="Classic Cheese Pizza"
+                        data-price="1400"
+                        data-category="pizza"
+                    >
+
+                        <div class="food-image-wrapper">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=85"
+                                alt="Freshly baked cheese pizza"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="food-card-content">
+
+                            <p class="food-category">PIZZA</p>
+
+                            <h3>Classic Cheese Pizza</h3>
+
+                            <p class="food-description">
+                                Rich cheese, delicious toppings
+                                and a golden baked crust.
+                            </p>
+
+                            <div class="food-card-footer">
+
+                                <span class="food-price">
+                                    Rs. 1,400
+                                </span>
+
+                                <button
+                                    type="button"
+                                    class="add-to-cart"
+                                    data-add-to-cart="pizza-001"
+                                >
+                                    + Add
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="food-card"
+                        data-id="sides-001"
+                        data-name="Golden French Fries"
+                        data-price="350"
+                        data-category="sides"
+                    >
+
+                        <div class="food-image-wrapper">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=85"
+                                alt="Golden crispy French fries"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="food-card-content">
+
+                            <p class="food-category">SIDES</p>
+
+                            <h3>Golden French Fries</h3>
+
+                            <p class="food-description">
+                                Crispy golden fries, perfect
+                                alongside your favourite meal.
+                            </p>
+
+                            <div class="food-card-footer">
+
+                                <span class="food-price">
+                                    Rs. 350
+                                </span>
+
+                                <button
+                                    type="button"
+                                    class="add-to-cart"
+                                    data-add-to-cart="sides-001"
+                                >
+                                    + Add
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                
+
+
+                    <article
+                        class="food-card"
+                        data-id="dessert-001"
+                        data-name="Chocolate Dessert"
+                        data-price="450"
+                        data-category="desserts"
+                    >
+
+                        <div class="food-image-wrapper">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=85"
+                                alt="Rich chocolate cake dessert"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="food-card-content">
+
+                            <p class="food-category">DESSERTS</p>
+
+                            <h3>Chocolate Dessert</h3>
+
+                            <p class="food-description">
+                                A sweet chocolate treat
+                                to complete your meal.
+                            </p>
+
+                            <div class="food-card-footer">
+
+                                <span class="food-price">
+                                    Rs. 450
+                                </span>
+
+                                <button
+                                    type="button"
+                                    class="add-to-cart"
+                                    data-add-to-cart="dessert-001"
+                                >
+                                    + Add
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <p class="menu-empty-message" id="menuEmptyMessage" hidden>
+                    No matching items found. Try another search.
+                </p>
+
+                <p class="menu-note">
+                    Demo menu and prices — confirm actual restaurant
+                    prices before accepting customer orders.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             6. SPECIAL OFFER
+        ========================== -->
+        <section class="offer-section">
+
+            <div class="container offer-container">
+
+                <div class="offer-content">
+
+                    <p class="eyebrow">A LITTLE SOMETHING SPECIAL</p>
+
+                    <h2>
+                        Good Food.
+                        <span>Better Moments.</span>
+                    </h2>
+
+                    <p>
+                        Gather your favourite people and make
+                        every meal worth remembering.
+                    </p>
+
+                    <a href="#menu" class="btn btn-primary">
+                        Find Your Favourite
+                    </a>
+
+                </div>
+
+                <div class="offer-image-wrapper">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=900&q=85"
+                        alt="Freshly prepared gourmet burger"
+                        loading="lazy"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             7. ABOUT US
+        ========================== -->
+        <section class="about-section section-padding" id="about">
+
+            <div class="container about-container">
+
+                <div class="about-image-wrapper">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=85"
+                        alt="Elegant restaurant dining atmosphere"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="about-content">
+
+                    <p class="eyebrow">OUR STORY</p>
+
+                    <h2>
+                        More Than Food.
+                        <span>It's an Experience.</span>
+                    </h2>
+
+                    <p>
+                        At Food House, we believe good food brings
+                        people together. Every dish is an opportunity
+                        to enjoy great flavours and meaningful moments.
+                    </p>
+
+                    <p>
+                        Our goal is simple: make every visit,
+                        every meal and every shared moment special.
+                    </p>
+
+                    <a href="#contact" class="btn btn-primary">
+                        Get in Touch
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             8. WHY CHOOSE US
+        ========================== -->
+        <section class="why-us-section section-padding">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">THE FOOD HOUSE DIFFERENCE</p>
+
+                    <h2>Why Choose <span>Us?</span></h2>
+
+                    <p>
+                        Great food starts with care, quality
+                        and attention to every little detail.
+                    </p>
+
+                </div>
+
+                <div class="why-us-grid">
+
+                    <article class="why-us-card">
+                        <span class="why-us-icon">✦</span>
+                        <h3>Quality Ingredients</h3>
+                        <p>
+                            A focus on flavour and thoughtful
+                            ingredient choices.
+                        </p>
+                    </article>
+
+                    <article class="why-us-card">
+                        <span class="why-us-icon">♨</span>
+                        <h3>Fresh Preparation</h3>
+                        <p>
+                            Delicious favourites prepared
+                            with care when you order.
+                        </p>
+                    </article>
+
+                    <article class="why-us-card">
+                        <span class="why-us-icon">♡</span>
+                        <h3>Customer First</h3>
+                        <p>
+                            A welcoming experience designed
+                            around your enjoyment.
+                        </p>
+                    </article>
+
+                    <article class="why-us-card">
+                        <span class="why-us-icon">❋</span>
+                        <h3>Made for Sharing</h3>
+                        <p>
+                            Food and moments worth enjoying
+                            with your favourite people.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             9. CUSTOMER REVIEWS
+        ========================== -->
+        <section class="reviews-section section-padding" id="reviews">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">KIND WORDS</p>
+
+                    <h2>
+                        Moments Worth
+                        <span>Sharing</span>
+                    </h2>
+
+                    <p>
+                        Your experience matters to us.
+                    </p>
+
+                </div>
+
+                <div class="reviews-grid">
+
+                    <article class="review-card">
+
+                        <div class="review-stars" aria-label="5 out of 5 stars">
+                            ★★★★★
+                        </div>
+
+                        <blockquote>
+                            "The menu looks inviting and the
+                            experience feels welcoming."
+                        </blockquote>
+
+                        <p class="review-author">Sample Review</p>
+
+                        <span class="review-note">
+                            Example review — replace with real customer feedback.
+                        </span>
+
+                    </article>
+
+                    <article class="review-card">
+
+                        <div class="review-stars" aria-label="5 out of 5 stars">
+                            ★★★★★
+                        </div>
+
+                        <blockquote>
+                            "A great place to enjoy food
+                            and spend time together."
+                        </blockquote>
+
+                        <p class="review-author">Sample Review</p>
+
+                        <span class="review-note">
+                            Example review — replace with real customer feedback.
+                        </span>
+
+                    </article>
+
+                    <article class="review-card">
+
+                        <div class="review-stars" aria-label="5 out of 5 stars">
+                            ★★★★★
+                        </div>
+
+                        <blockquote>
+                            "Looking forward to exploring
+                            more of the menu."
+                        </blockquote>
+
+                        <p class="review-author">Sample Review</p>
+
+                        <span class="review-note">
+                            Example review — replace with real customer feedback.
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             10. NEWSLETTER
+        ========================== -->
+        <section class="newsletter-section">
+
+            <div class="container newsletter-container">
+
+                <div class="newsletter-content">
+
+                    <p class="eyebrow">STAY IN THE LOOP</p>
+
+                    <h2>Something Delicious Is Coming.</h2>
+
+                    <p>
+                        Join our mailing list for menu updates
+                        and special announcements.
+                    </p>
+
+                </div>
+
+                <form class="newsletter-form" id="newsletterForm">
+
+                    <label for="newsletterEmail" class="sr-only">
+                        Your email address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="newsletterEmail"
+                        name="email"
+                        placeholder="Enter your email address"
+                        autocomplete="email"
+                        required
+                    >
+
+                    <button type="submit" class="btn btn-primary">
+                        Subscribe
+                    </button>
+
+                    <p
+                        class="form-message"
+                        id="newsletterMessage"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             11. CONTACT SECTION
+        ========================== -->
+        <section class="contact-section section-padding" id="contact">
+
+            <div class="container contact-container">
+
+                <div class="contact-content">
+
+                    <p class="eyebrow">LET'S CONNECT</p>
+
+                    <h2>
+                        We'd Love to
+                        <span>Hear From You.</span>
+                    </h2>
+
+                    <p>
+                        Have a question about our menu or an upcoming
+                        visit? Send us a message.
+                    </p>
+
+                    <div class="contact-details">
+
+                        <div class="contact-detail">
+                            <h3>Visit Us</h3>
+                            <p>
+                                Add your restaurant's real address here.
+                            </p>
+                        </div>
+
+                        <div class="contact-detail">
+                            <h3>Call Us</h3>
+                            <p>
+                                Add your restaurant's real phone number here.
+                            </p>
+                        </div>
+
+                        <div class="contact-detail">
+                            <h3>Opening Hours</h3>
+                            <p>
+                                Add your confirmed opening hours here.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <form class="contact-form" id="contactForm">
+
+                    <h3>Send Us a Message</h3>
+
+                    <div class="form-group">
+
+                        <label for="contactName">Your Name</label>
+
+                        <input
+                            type="text"
+                            id="contactName"
+                            name="name"
+                            placeholder="Enter your name"
+                            autocomplete="name"
+                            minlength="2"
+                            maxlength="80"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="contactEmail">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="contactEmail"
+                            name="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="contactSubject">Subject</label>
+
+                        <input
+                            type="text"
+                            id="contactSubject"
+                            name="subject"
+                            placeholder="What is your message about?"
+                            maxlength="120"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="contactMessage">Your Message</label>
+
+                        <textarea
+                            id="contactMessage"
+                            name="message"
+                            rows="5"
+                            placeholder="Write your message here..."
+                            minlength="10"
+                            maxlength="2000"
+                            required
+                        ></textarea>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        Send Message
+                    </button>
+
+                    <p
+                        class="form-message"
+                        id="contactFormMessage"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         12. SHOPPING CART DRAWER
+    ========================== -->
+    <div class="cart-overlay" id="cartOverlay" hidden></div>
+
+    <aside
+        class="cart-drawer"
+        id="cartDrawer"
+        aria-label="Shopping cart"
+        aria-hidden="true"
+        inert
+    >
+
+        <div class="cart-header">
+
+            <div>
+                <p class="eyebrow">YOUR SELECTION</p>
+                <h2>Your Cart</h2>
+            </div>
+
+            <button
+                type="button"
+                class="close-cart"
+                id="closeCart"
+                aria-label="Close shopping cart"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="cart-items" id="cartItems">
+
+            <div class="empty-cart" id="emptyCart">
+                <span class="empty-cart-icon">♡</span>
+                <h3>Your cart is empty</h3>
+                <p>Explore our menu and find something delicious.</p>
+
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    id="continueShopping"
+                >
+                    Explore Menu
+                </button>
+            </div>
+
+        </div>
+
+
+        <div class="cart-summary" id="cartSummary">
+
+            <div class="cart-summary-row">
+                <span>Subtotal</span>
+                <span id="cartSubtotal">Rs. 0</span>
+            </div>
+
+            <div class="cart-summary-row">
+                <span>Delivery Fee</span>
+                <span id="deliveryFee">Rs. 200</span>
+            </div>
+
+            <div class="cart-summary-row cart-total-row">
+                <strong>Total</strong>
+                <strong id="cartTotal">Rs. 0</strong>
+            </div>
+
+            <p class="cart-delivery-note">
+                Delivery fee is an example and must be configured
+                for your actual service area.
+            </p>
+
+            <button
+                type="button"
+                class="btn btn-primary checkout-button"
+                id="proceedToCheckout"
+            >
+                Proceed to Checkout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         13. CHECKOUT SECTION
+    ========================== -->
+    <section
+        class="checkout-section section-padding"
+        id="checkout"
+        hidden
+    >
+
+        <div class="container checkout-container">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">ALMOST THERE</p>
+
+                <h2>Complete Your <span>Order</span></h2>
+
+                <p>
+                    Enter your delivery details and review your order.
+                </p>
+
+            </div>
+
+
+            <div class="checkout-layout">
+
+                <form class="checkout-form" id="checkoutForm">
+
+                    <h3>Delivery Information</h3>
+
+                    <div class="form-group">
+
+                        <label for="customerName">Full Name</label>
+
+                        <input
+                            type="text"
+                            id="customerName"
+                            name="customerName"
+                            autocomplete="name"
+                            maxlength="100"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="customerPhone">Phone Number</label>
+
+                        <input
+                            type="tel"
+                            id="customerPhone"
+                            name="customerPhone"
+                            autocomplete="tel"
+                            placeholder="03XXXXXXXXX"
+                            pattern="[0-9+\s()-]{10,20}"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="customerEmail">
+                            Email Address (Optional)
+                        </label>
+
+                        <input
+                            type="email"
+                            id="customerEmail"
+                            name="customerEmail"
+                            autocomplete="email"
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="customerAddress">
+                            Complete Delivery Address
+                        </label>
+
+                        <textarea
+                            id="customerAddress"
+                            name="customerAddress"
+                            rows="3"
+                            autocomplete="street-address"
+                            minlength="8"
+                            maxlength="500"
+                            required
+                        ></textarea>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="customerCity">City</label>
+
+                        <input
+                            type="text"
+                            id="customerCity"
+                            name="customerCity"
+                            autocomplete="address-level2"
+                            maxlength="100"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="orderNotes">
+                            Order Notes (Optional)
+                        </label>
+
+                        <textarea
+                            id="orderNotes"
+                            name="orderNotes"
+                            rows="3"
+                            maxlength="500"
+                            placeholder="Any special instructions?"
+                        ></textarea>
+
+                    </div>
+
+
+                    <fieldset class="payment-methods">
+
+                        <legend>Payment Method</legend>
+
+                        <label class="payment-option">
+
+                            <input
+                                type="radio"
+                                name="paymentMethod"
+                                value="cod"
+                                checked
+                            >
+
+                            <span>
+                                <strong>Cash on Delivery</strong>
+                                <small>Pay when your order arrives.</small>
+                            </span>
+
+                        </label>
+
+                        <label class="payment-option">
+
+                            <input
+                                type="radio"
+                                name="paymentMethod"
+                                value="online"
+                                disabled
+                            >
+
+                            <span>
+                                <strong>Online Payment</strong>
+                                <small>
+                                    Available after payment integration.
+                                </small>
+                            </span>
+
+                        </label>
+
+                    </fieldset>
+
+
+                    <label class="terms-option">
+
+                        <input
+                            type="checkbox"
+                            id="acceptTerms"
+                            name="acceptTerms"
+                            required
+                        >
+
+                        <span>
+                            I confirm that my order details are correct.
+                        </span>
+
+                    </label>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary place-order-button"
+                    >
+                        Place Order
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        id="backToMenu"
+                    >
+                        Back to Menu
+                    </button>
+
+                    <p
+                        class="form-message"
+                        id="checkoutMessage"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+
+                <aside class="checkout-order-summary">
+
+                    <h3>Order Summary</h3>
+
+                    <div id="checkoutItems">
+                        <p>Your selected items will appear here.</p>
+                    </div>
+
+                    <div class="cart-summary-row">
+                        <span>Subtotal</span>
+                        <span id="checkoutSubtotal">Rs. 0</span>
+                    </div>
+
+                    <div class="cart-summary-row">
+                        <span>Delivery</span>
+                        <span id="checkoutDelivery">Rs. 200</span>
+                    </div>
+
+                    <div class="cart-summary-row cart-total-row">
+                        <strong>Total</strong>
+                        <strong id="checkoutTotal">Rs. 0</strong>
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         14. ORDER CONFIRMATION
+    ========================== -->
+    <section
+        class="order-success-section section-padding"
+        id="orderSuccess"
+        hidden
+    >
+
+        <div class="container order-success-content">
+
+            <div class="success-icon" aria-hidden="true">✓</div>
+
+            <p class="eyebrow">THANK YOU</p>
+
+            <h2>Your Order Has Been <span>Submitted</span></h2>
+
+            <p id="orderSuccessMessage" role="status">
+                Your order summary will appear here.
+            </p>
+
+            <p>
+                A real order confirmation requires the order to be
+                sent to your restaurant through a configured service.
+            </p>
+
+            <a href="#menu" class="btn btn-primary" id="orderAgain">
+                Order Again
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         15. FOOTER
+    ========================== -->
+    <footer class="site-footer">
+
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo footer-logo">
+                    <span class="logo-icon">F.</span>
+
+                    <span class="logo-text">
+                        FOOD HOUSE
+                        <small>GOOD FOOD, GOOD MOOD</small>
+                    </span>
+                </a>
+
+                <p>
+                    Delicious food, thoughtful service
+                    and moments worth sharing.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Explore</h3>
+
+                <a href="#home">Home</a>
+                <a href="#menu">Our Menu</a>
+                <a href="#about">Our Story</a>
+                <a href="#reviews">Reviews</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Get in Touch</h3>
+
+                <a href="#contact">Contact Us</a>
+
+                <a href="#checkout">Your Order</a>
+
+                <p>Add your real address and contact details.</p>
+
+            </div>
+
+
+            <div class="footer-social">
+
+                <h3>Follow Along</h3>
+
+                <!-- Replace # with your real social media links -->
+                <a href="#" aria-label="Instagram">Instagram</a>
+
+                <a href="#" aria-label="Facebook">Facebook</a>
+
+                <a href="#" aria-label="TikTok">TikTok</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container footer-bottom-container">
+
+                <p>
+                    © <span id="currentYear">2026</span> Food House.
+                    All rights reserved.
+                </p>
+
+                <a href="#top" class="back-to-top">
+                    Back to Top ↑
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         16. NOTIFICATIONS
+    ========================== -->
+    <div
+        class="toast-container"
+        id="toastContainer"
+        aria-live="polite"
+        aria-atomic="true"
+    ></div>
+
+
+    <!-- =========================
+         17. BACKDROP / UI SUPPORT
+    ========================== -->
+    <button
+        type="button"
+        class="scroll-top-button"
+        id="scrollTopButton"
+        aria-label="Scroll to top"
+        hidden
+    >
+        ↑
+    </button>
+
+
+</body>
+</html>
